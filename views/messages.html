@@ -1,0 +1,26 @@
+<template name="messages">
+<div id="messages">
+    {{#each messages}}
+    {{> message}} 
+    {{/each}}
+</div>
+</template>
+
+<template name="message">
+<div class="" style="display:block;margin:2px;">
+    <button class="btn btn-mini btn-info" id="facebook"><span class="fa fa-facebook"></span> {{facebook}}</button>
+    <button class="btn btn-mini btn-info" id="googlePlus"><span class="fa fa-google-plus"></span> {{googlePlus}}</button>
+    <button class="btn btn-mini btn-info" id="twitter"><span class="fa fa-twitter"></span> {{twitter}}</button>
+    <button class="btn btn-mini btn-danger" id="remove"><span class="fa fa-ban"></span> </button>
+
+    <p>
+        <span class="fa fa-user"></span>
+        <small> {{username}}</small> 
+    </p>
+
+
+    <p> {{message}} </p>
+    <hr/>
+</div>
+</template>
+
